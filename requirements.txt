@@ -1,0 +1,20 @@
+# --- Stage 1: Foundation & Tools ---
+jupyter           # Interactive coding notebook (Industry standard)
+requests          # Allows your code to talk to the internet
+python-dotenv     # Manages security keys (crucial for AI APIs)
+
+# --- Stage 2: Data Analysis ---
+pandas            # The Excel-killer. Manipulates huge tables of data
+numpy             # The math engine behind almost all AI
+matplotlib        # Basic plotting and graphing
+seaborn           # Makes the graphs look professional
+
+# --- Stage 3: Machine Learning ---
+scikit-learn      # The "Swiss Army Knife" of traditional machine learning
+scipy             # Advanced scientific computing
+
+# --- Stage 4: AI Agents & LLMs ---
+openai            # Official library to talk to ChatGPT
+langchain         # The framework for building complex AI bots
+langchain-openai  # Connects LangChain specifically to OpenAI
+huggingface-hub   # Access to thousands of open-source AI models

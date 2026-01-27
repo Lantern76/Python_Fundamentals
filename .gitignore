@@ -1,0 +1,32 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+# --- Security (Never upload these) ---
+.env
+*.env
+secrets.json
+.venv/   <-- If your folder is named .venv
+venv/    <-- If your folder is named venv
+.venv
+*.code-workspace
+# --- Python Housekeeping ---
+__pycache__/
+*.pyc
+.venv/
+env/
+
+# --- System & Editor ---
+.DS_Store
+.vscode/
+
+# --- Output & Data (Code matters more) ---
+*.csv
+*.png
+
+
+# --- Installers & Archives ---
+*.exe
+*.msi
+*.dmg
+*.pkg
+*.zip
+*.tar.gz
+*.rar
