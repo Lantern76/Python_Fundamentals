@@ -25,25 +25,25 @@ data = {
 
 # Create the DataFrame
 df_dummy = pd.DataFrame(data)
-
-# Save to CSV
 df_dummy.to_csv("daily_headlines.csv", index=False)
-
-print("File 'daily_headlines.csv' created successfully!")
-# --- 2. INPUT ---
-# Load 'daily_headlines.csv' into a variable called df
 df = pd.read_csv("daily_headlines.csv")
+# Save to CSV
+df = pd.read_csv("daily_headlines.csv")
+print("File 'daily_headlines.csv' created successfully!")
+
+# Load 'daily_headlines.csv' into a variable called df
+
 
 # --- 3. PROCESS ---
 # Filter for "AI" and save to 'ai_news'
 # Extract domains and count them
-
 ai_news = df[df["Headline"].str.contains("AI")]
-ai_news.to_csv("ai_news.csv")
+counts = ai_news["Link"].str.split("/").str[2].value_counts()
+
 # --- 4. OUTPUT ---
 # Save the filtered CSV
 # Create and save the bar chart
 
-counts = ai_news["Link"].str.split("/").str[2].value_counts()
+ai_news.to_csv("ai_news.csv")
 
 counts.plot(kind="bar").figure.savefig("ai_sources.png")
